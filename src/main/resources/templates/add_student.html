@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="main_layout.html">
+
+<div layout:fragment="siteContent">
+    <form action="/add-student" method="post">
+        <div class="mb-3">
+            <label for="name" class="form-label">NAME :</label>
+            <input type="text" class="form-control" id="name" name="name"
+                   placeholder="Insert name :" required>
+        </div>
+        <div class="mb-3">
+            <label for="surname" class="form-label">SURNAME :</label>
+            <input type="text" class="form-control" id="surname" name="surname"
+                   placeholder="Insert surname :" required>
+        </div>
+        <div class="mb-3">
+            <label for="exam" class="form-label">EXAM :</label>
+            <input type="text" class="form-control" id="exam" name="exam"
+                   placeholder="Insert exam :" required>
+        </div>
+        <button class="btn btn-success">ADD STUDENT</button>
+    </form>
+</div>
+</html>
